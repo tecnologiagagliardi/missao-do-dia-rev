@@ -161,13 +161,14 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 20px;
-        margin: 10px;
+    input[type="date"],
+    select {
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    button {
-        font-size: 14px;
-        padding: 10px;
+    .form-group {
+        display: flex;
+        flex-direction: column;
     }
 }
