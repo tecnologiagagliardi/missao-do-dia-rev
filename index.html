@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão do Dia Revenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Missão do Dia Revenda</h1>
+        <form id="missaoForm">
+            <div class="form-group">
+                <label>Data:</label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="form-group">
+                <label>Consultor:</label>
+                <select id="consultor" required>
+                    <option value=""></option>
+                    <option>ADARLAN FARIAS</option>
+                    <option>ALCINO SOARES DE CARVALHO JUNIOR</option>
+                    <option>ALESSANDRA MARIA MACHADO CARVALHO</option>
+                    <option>ANDRÉ YALLE CAVALCANTI BARBOSA</option>
+                    <option>ANTONIO SOUSA MAIA SOBRINHO</option>
+                    <option>ARTHUR GUILHERME DE SOUSA SALES</option>
+                    <option>BRUNO HENRIQUE DIOGENES ALVES</option>
+                    <option>CARLOS JOSE ANDRADE DE LIMA SILVA</option>
+                    <option>DAMIAO ALENCAR RODRIGUES</option>
+                    <option>DIOGENES DE OLIVEIRA CLEMENTINO</option>
+                    <option>EVANDO GENUINO DA SILVA</option>
+                    <option>FELIPE GOUVEIA ROMUALDO</option>
+                    <option>FERNANDO LUIZ BEZERRA FERNANDES</option>
+                    <option>FRANCISCO WELLINGTON SOARES DO NASCIMENTO</option>
+                    <option>GABRIEL MONTEIRO DE SOUSA</option>
+                    <option>GUILHERME VIEIRA DE ALMEIDA</option>
+                    <option>HÉLIO PINTO FELIX</option>
+                    <option>HILTON SILVA DO NASCIMENTO</option>
+                    <option>HUGO DE SOUZA CALDAS</option>
+                    <option>ISABELE NUNES DELFINO</option>
+                    <option>JEFFERSON DANIELY MARTINS DE ARAUJO</option>
+                    <option>JEYSON GABRIEL DO NASCIMENTO MENDES</option>
+                    <option>JONATTAS WEYDER TEMOTEO CARTAXO</option>
+                    <option>JOSE COSMO DOS SANTOS JUNIOR</option>
+                    <option>JOSE DE ARIMATEA PEREIRA DE OLIVEIRA</option>
+                    <option>JOSE LUCIVAL MARQUES DOS SANTOS</option>
+                    <option>JOSÉ MARCELINO NETO</option>
+                    <option>LEANDRO MIGUEL ALVES DE CASTRO</option>
+                    <option>LIESSE JOSÉ DA COSTA</option>
+                    <option>LUAN HENRIQUE SOARES DE MEDEIROS</option>
+                    <option>LUCAS QUEIROZ LIMA</option>
+                    <option>LUIS DE FRANCA N PACHECO</option>
+                    <option>LUIZ CARLOS BARBOSA</option>
+                    <option>MANUEL ROSILANE MORAES DO NASCIMENTO</option>
+                    <option>MILEIDE JANE DE FRANÇA MOTA</option>
+                    <option>PEDRO HUGO DA SILVEIRA LIMA</option>
+                    <option>RICARDO DO AMARAL DE MEDEIROS</option>
+                    <option>SILAS SILVA ABREU</option>
+                    <option>THIAGO DE MENDONÇA LUCAS</option>
+                    <option>TIAGO VIEIRA DA SILVA</option>
+                </select>
+            </div>
+
+            <h2>KPI's Estratégicos</h2>
+            <div class="grid">
+                <label>Nº de Visitas:<input type="tel" id="visitas" required></label>
+                <label>Clientes Inadimplentes:<input type="tel" id="inadimplentes" required></label>
+                <label>Clientes sem Compras 2025:<input type="tel" id="semCompras" required></label>
+                <label>Clientes Parcerias:<input type="tel" id="parcerias" required></label>
+                <label>Clientes Troca Inteligente:<input type="tel" id="troca" required></label>
+                <label>Meta Dia Reativação:<input type="tel" id="reativacao" required></label>
+                <label>Meta Dia Positivação:<input type="tel" id="positivacao" required></label>
+            </div>
+
+            <h2>KPI's Táticos</h2>
+            <div class="grid">
+                <label>Meta Dia LUB (Lts):<input type="tel" id="lub" required></label>
+                <label>Meta Dia Graxas (Kg):<input type="tel" id="graxas" required></label>
+                <label>Meta Dia Ancilares (Cxs):<input type="tel" id="ancilares" required></label>
+                <label>Meta Dia Tirreno (Lts):<input type="tel" id="tirreno" required></label>
+                <label>Meta Dia Pneus 2R:<input type="tel" id="pneus2r" required></label>
+                <label>Meta Dia Pneus 4R:<input type="tel" id="pneus4r" required></label>
+                <label>Meta Gforce Arla (Unds):<input type="tel" id="arla" required></label>
+                <label>Meta Capas Banco (Unds):<input type="tel" id="capas" required></label>
+            </div>
+
+            <button type="submit">Gerar Relatório</button>
+        </form>
+
+        <div id="relatorio"></div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="modalConfirmacao" class="modal">
+        <div class="modal-content">
+            <h2>Confirme suas informações</h2>
+            <pre id="modalTexto"></pre>
+            <div class="modal-buttons">
+                <button id="btnConfirmar">Confirmar</button>
+                <button id="btnFechar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
