@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão do Dia B2B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Missão do Dia B2B</h1>
+        <form id="missaoForm">
+            <div class="form-group">
+                <label>Data:</label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="form-group">
+                <label>Consultor:</label>
+                <select id="consultor" required>
+                    <option value=""></option>
+                    <option value="ALDENIR CARNEIRO AGUIAR">ALDENIR CARNEIRO AGUIAR</option>
+                    <option value="ANTONIO HENRIQUE GOMES MENESES">ANTONIO HENRIQUE GOMES MENESES</option>
+                    <option value="CARLOS EDUARDO DE SOUZA HOLANDA">CARLOS EDUARDO DE SOUZA HOLANDA</option>
+                    <option value="EMANUEL CAMARA RODRIGUES RIBEIRO">EMANUEL CAMARA RODRIGUES RIBEIRO</option>
+                    <option value="FABRICIO ALCANTARA PEREIRA DA SILVA">FABRICIO ALCANTARA PEREIRA DA SILVA</option>
+                    <option value="FRANCISCO JONES FERREIRA PRACIANO">FRANCISCO JONES FERREIRA PRACIANO</option>
+                    <option value="FRANCISCO KELVELHYN ARAÚJO DE MELO BUTRAGO">FRANCISCO KELVELHYN ARAÚJO DE MELO
+                        BUTRAGO</option>
+                    <option value="GEOVANNE DA SILVA NASCIMENTO">GEOVANNE DA SILVA NASCIMENTO</option>
+                    <option value="JOAO BATISTA RODRIGUES FILHO">JOAO BATISTA RODRIGUES FILHO</option>
+                    <option value="JOSIVEUDO QUEIROZ DE CARVALHO">JOSIVEUDO QUEIROZ DE CARVALHO</option>
+                    <option value="JUCIANO PAULO DE SOUZA">JUCIANO PAULO DE SOUZA</option>
+                    <option value="KARYNA AMORIM DA SILVA">KARYNA AMORIM DA SILVA</option>
+                    <option value="LUIS COSMO DE BRITO FILHO">LUIS COSMO DE BRITO FILHO</option>
+                    <option value="MARCOS ANTÔNIO OLIVEIRA DA SILVA JÚNIOR">MARCOS ANTÔNIO OLIVEIRA DA SILVA JÚNIOR
+                    </option>
+                    <option value="MAX FLÓRIDO AMANCIO LOPES DINIZ BARROS">MAX FLÓRIDO AMANCIO LOPES DINIZ BARROS
+                    </option>
+                    <option value="NASIASENO GALVAO DA SILVA">NASIASENO GALVAO DA SILVA</option>
+                    <option value="RAFAEL RODRIGUES DA COSTA">RAFAEL RODRIGUES DA COSTA</option>
+                    <option value="RAVI NUNES DE MELO">RAVI NUNES DE MELO</option>
+                    <option value="RENNA DE CASTRO GOMES">RENNA DE CASTRO GOMES</option>
+                    <option value="SIRLANDIO TRINDADE SOBRINHO">SIRLANDIO TRINDADE SOBRINHO</option>
+                </select>
+            </div>
+
+            <h2>KPI's Estratégicos</h2>
+            <div class="grid">
+                <label>Nº de Visitas:<input type="tel" id="visitas" maxlength="6" required></label>
+                <label>Clientes Inadimplentes:<input type="tel" id="inadimplentes" maxlength="6" required></label>
+                <label>Clientes sem Compras 2025:<input type="tel" id="semCompras" maxlength="6" required></label>
+                <label>Clientes Parcerias:<input type="tel" id="parcerias" maxlength="6" required></label>
+                <label>Meta Dia Reativação:<input type="tel" id="reativacao" maxlength="6" required></label>
+                <label>Meta Dia Positivação:<input type="tel" id="positivacao" maxlength="6" required></label>
+                <label>Meta Pipeline:<input type="tel" id="pipeline" maxlength="6" required></label>
+            </div>
+
+            <h2>KPI's Táticos</h2>
+            <div class="grid">
+                <label>Meta Dia LUB (Lts):<input type="tel" id="lub" maxlength="6" required></label>
+                <label>Meta Dia Graxas (Kg):<input type="tel" id="graxas" maxlength="6" required></label>
+                <label>Meta SHC (Lts):<input type="tel" id="shc" maxlength="6" required></label>
+                <label>Meta Dia Tirreno (Lts):<input type="tel" id="tirreno" maxlength="6" required></label>
+                <label>Meta Dia Pneus 4R:<input type="tel" id="pneus4r" maxlength="6" required></label>
+                <label>Meta Gforce Arla (Unds):<input type="tel" id="arla" maxlength="6" required></label>
+                <label>Meta Gforce Quimics (Unds):<input type="tel" id="quimics" maxlength="6" required></label>
+            </div>
+
+            <button type="submit">Gerar Relatório</button>
+        </form>
+
+        <div id="relatorio"></div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="modalConfirmacao" class="modal">
+        <div class="modal-content">
+            <h2>Confirme suas informações</h2>
+            <pre id="modalTexto"></pre>
+            <div class="modal-buttons">
+                <button id="btnConfirmar">Confirmar</button>
+                <button id="btnFechar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
